@@ -1,6 +1,6 @@
 const clock = document.getElementById("clock");
 const calendar = document.getElementById("calendar");
-const greetings = document.getElementById("greetings");
+// const greetings = document.getElementById("greetings");
 
 const days = ["Sun", "Mon", "Tue", "Wen", "Thu", "Fri", "Sat"];
 const greetingsList = ["Morning", "Afternoon", "Evening", "Night"];
@@ -9,7 +9,6 @@ let date = new Date();
 let greetingsNum = 0;
 
 function getGreetings(greetingsNum) {
-  // console.log(greetingsNum);
   greetings.innerText = `Good ${greetingsList[greetingsNum]}, `;
 }
 
@@ -18,15 +17,14 @@ function getCalendar() {
   const month = date.getMonth() + 1;
   const todayDate = date.getDate();
   const day = days[date.getDay()];
-  calendar.innerText = `${year}. ${month}. ${todayDate}. ${day}. `;
+  calendar.innerText = `${year} ${month} ${todayDate} ${day}`;
 }
 
 function getClock() {
   date = new Date();
   const hours = String(date.getHours()).padStart(2, "0");
   const mins = String(date.getMinutes()).padStart(2, "0");
-  const secs = String(date.getSeconds()).padStart(2, "0");
-  clock.innerText = `${hours}:${mins}:${secs}`;
+  clock.innerText = `${hours}:${mins}`;
 
   const nowHours = date.getHours();
   if (nowHours >= 6 && nowHours < 12) {

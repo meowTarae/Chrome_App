@@ -1,12 +1,14 @@
 const loginForm = document.getElementById("login-form");
 const loginInput = loginForm.querySelector("input");
 const greeting = document.getElementById("greeting");
+const greetings = document.getElementById("greetings");
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 
 function paintGreeting(userName) {
   greeting.classList.remove(HIDDEN_CLASSNAME);
+  greetings.classList.remove(HIDDEN_CLASSNAME);
   greeting.innerText = userName;
 }
 

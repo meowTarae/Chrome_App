@@ -1,0 +1,45 @@
+.clock {
+  margin-top: 17%;
+  width: 24%;
+  height: 24%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+#login-form {
+  margin-top: 4%;
+}
+
+#login-form input {
+  font-family: "Nanum Brush Script", cursive;
+  border: 2px solid red;
+  position: absolute;
+  right: 25%;
+  background-color: inherit;
+  width: 50%;
+  border: none;
+  border-bottom: 2px solid #fff;
+  text-align: center;
+  font-size: 1.4em;
+}
+#login-form input:focus {
+  outline: none;
+}
+#calendar {
+  margin-top: -4%;
+  font-size: 2em;
+  font-weight: 800;
+}
+.clock h1 {
+  font-size: 10em;
+  font-weight: 800;
+}
+
+.clock div {
+  margin-top: 4%;
+}
+.clock span {
+  font-size: 1.8em;
+}
