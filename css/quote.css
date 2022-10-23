@@ -1,0 +1,17 @@
+#quote {
+  position: absolute;
+  left: 0%;
+  bottom: 4%;
+  height: 10vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#quote span {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 800;
+}
