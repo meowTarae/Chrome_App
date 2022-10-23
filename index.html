@@ -21,12 +21,31 @@
           <span id="greeting" class="hidden"></span>
         </div>
       </div>
-      <div id="todoList"></div>
-      <div id="weather"></div>
+      <div id="todoList">
+        <header>
+          <h2>To-Do</h2>
+          <form id="todo-form">
+            <input
+              type="text"
+              placeholder="Write a To Do and Press Enter"
+              required
+            />
+          </form>
+        </header>
+        <ul id="todo-list"></ul>
+      </div>
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+      <div id="quote"></div>
     </div>
 
     <script src="js/login.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/API_KEY.js"></script>
   </body>
 </html>

@@ -125,3 +125,6 @@ table {
 .hidden {
   display: none;
 }
+.text-decoration__line-through {
+  text-decoration: line-through;
+}

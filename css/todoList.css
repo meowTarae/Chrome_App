@@ -1,0 +1,70 @@
+#todoList {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  right: 1.8%;
+  width: 18%;
+  height: 100vh;
+
+  background-color: inherit;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#todoList header {
+  margin-top: 2%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#todoList h2 {
+  font-size: 4em;
+}
+
+#todo-form input {
+  margin-top: 6%;
+  font-family: "Nanum Brush Script", cursive;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background-color: inherit;
+  text-align: center;
+
+  font-size: 1.4em;
+}
+#todo-form input:focus {
+  outline: none;
+}
+
+#todo-btn {
+  background: inherit;
+  border: none;
+}
+#todo-checkbox {
+  background: none;
+}
+
+#todo-list {
+  width: 70%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 72%;
+
+  overflow: scroll;
+}
+
+#todo-list li {
+  margin-bottom: 8%;
+  display: flex;
+  justify-content: space-between;
+}
+#todo-list li span {
+  text-align: center;
+  font-size: 1.6em;
+  width: 6 0%;
+  /* backdrop-filter: blur(100px); */
+}
